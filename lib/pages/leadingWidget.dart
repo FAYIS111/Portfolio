@@ -10,7 +10,7 @@ class IconWidget extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.all(2.0),
-            child: Image.asset("assets/pic1.jpeg"),
+            child: Image.asset("assets/nameIcon.webp"),
           ),
           const Padding(
             padding: EdgeInsets.all(8.0),

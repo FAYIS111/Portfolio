@@ -6,17 +6,17 @@ class ThirdPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
       child: Padding(
         padding: const EdgeInsets.all(5),
         child: Card(
           shadowColor: Colors.grey,
           elevation: 10,
-          child: Column(
+          child: ListView(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(30),
+              const Padding(
+                padding: EdgeInsets.all(30),
                 child: Text(
                   "Hello",
                   style: TextStyle(
@@ -27,8 +27,8 @@ class ThirdPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(7),
+              const Padding(
+                padding: EdgeInsets.all(7),
                 child: Text(
                   "A bright, talented, ambitious and self motivated application developer with a strong technical background who possesses self discipline and the ability to work with the minimum of supervision.Able to play a key role throughout a application developement to ensure maximum accessibility,customer experiance and usability. A good team player who thrives on creating engaging creative solutions, is deadline orientated and has the ability to produce detailed technical specifications from client requirements.",
                   style: TextStyle(
@@ -37,17 +37,17 @@ class ThirdPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(20),
+              const Padding(
+                padding: EdgeInsets.all(20),
                 child: Divider(
                   color: Colors.black45,
                   thickness: 2,
                 ),
               ),
-              Row(
+              const Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(7.0),
+                    padding: EdgeInsets.all(7.0),
                     child: Text(
                       "Name :",
                       style: TextStyle(
@@ -58,7 +58,7 @@ class ThirdPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(10),
+                    padding: EdgeInsets.all(10),
                     child: Text(
                       "Muhammed fayis MT",
                       style: TextStyle(
@@ -69,10 +69,10 @@ class ThirdPage extends StatelessWidget {
                   ),
                 ],
               ),
-              Row(
+              const Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(7.0),
+                    padding: EdgeInsets.all(7.0),
                     child: Text(
                       "Email :",
                       style: TextStyle(
@@ -83,7 +83,7 @@ class ThirdPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(10),
+                    padding: EdgeInsets.all(10),
                     child: Text(
                       "fayismt111@gmail.com",
                       style: TextStyle(
@@ -94,10 +94,10 @@ class ThirdPage extends StatelessWidget {
                   ),
                 ],
               ),
-              Row(
+              const Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(7.0),
+                    padding: EdgeInsets.all(7.0),
                     child: Text(
                       "Phone :",
                       style: TextStyle(
@@ -108,7 +108,7 @@ class ThirdPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(10),
+                    padding: EdgeInsets.all(10),
                     child: Text(
                       "9526186184",
                       style: TextStyle(
@@ -119,10 +119,10 @@ class ThirdPage extends StatelessWidget {
                   ),
                 ],
               ),
-              Row(
+              const Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(7.0),
+                    padding: EdgeInsets.all(7.0),
                     child: Text(
                       "Web Address :",
                       style: TextStyle(
@@ -133,7 +133,7 @@ class ThirdPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(10),
+                    padding: EdgeInsets.all(10),
                     child: Text(
                       "***********",
                       style: TextStyle(
@@ -144,6 +144,29 @@ class ThirdPage extends StatelessWidget {
                   ),
                 ],
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.black),
+                    ),
+                    onPressed: () {},
+                    child: const Text("Download C V"),
+                  ),
+                  ElevatedButton(
+                    style: ButtonStyle(
+                      textStyle: MaterialStateProperty.all(
+                        TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: Text("Contact Me"),
+                  ),
+                ],
+              )
             ],
           ),
         ),
