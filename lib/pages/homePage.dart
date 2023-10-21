@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/pages/fifthPage.dart';
 import 'package:portfolio/pages/firstPage.dart';
+import 'package:portfolio/pages/fourthPage.dart';
 import 'package:portfolio/pages/secondPage.dart';
 import 'package:portfolio/pages/thirdPage.dart';
 
@@ -16,6 +18,8 @@ class HomePage extends StatelessWidget {
           FirstPage(),
           SecondPage(),
           ThirdPage(),
+          FourthPage(),
+          FifthPage(),
         ],
       ),
     );
