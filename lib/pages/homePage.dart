@@ -3,6 +3,7 @@ import 'package:portfolio/pages/fifthPage.dart';
 import 'package:portfolio/pages/firstPage.dart';
 import 'package:portfolio/pages/fourthPage.dart';
 import 'package:portfolio/pages/secondPage.dart';
+import 'package:portfolio/pages/sixthPage.dart';
 import 'package:portfolio/pages/thirdPage.dart';
 
 class HomePage extends StatelessWidget {
@@ -15,11 +16,12 @@ class HomePage extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       child: ListView(
         children: [
-          FirstPage(),
-          SecondPage(),
+          const FirstPage(),
+          const SecondPage(),
           ThirdPage(),
-          FourthPage(),
+          const FourthPage(),
           FifthPage(),
+          const SixthPage(),
         ],
       ),
     );

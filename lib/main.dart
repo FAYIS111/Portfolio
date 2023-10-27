@@ -7,7 +7,7 @@ void main() {
     MaterialApp(
       title: "my portfolio",
       home: Scaffold(
-        body: HomePage(),
+        body: const HomePage(),
         appBar: AppBar(
           backgroundColor: Colors.white30,
           actions: const [

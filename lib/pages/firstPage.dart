@@ -22,7 +22,7 @@ class FirstPage extends StatelessWidget {
               child: CircleAvatar(
                 radius: 120,
                 backgroundColor: Colors.orange,
-                backgroundImage: AssetImage("assets/pic3.jpeg"),
+                backgroundImage: AssetImage("assets/pic4.jpeg"),
               ),
             ),
             const Text(
