@@ -38,6 +38,7 @@ class ServiceCard extends StatelessWidget {
                 widgetText: headerName,
                 fontValue: 26,
                 fontWeight: FontWeight.bold,
+                textColor: Colors.black,
               ),
             ),
             Padding(
@@ -51,6 +52,7 @@ class ServiceCard extends StatelessWidget {
                 widgetText: discription,
                 fontValue: 20,
                 fontWeight: FontWeight.normal,
+                textColor: Colors.black,
               ),
             ),
           ],

@@ -7,7 +7,7 @@ class FourthPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(5),
+      padding: const EdgeInsets.all(0.5),
       child: Card(
         shadowColor: Colors.grey,
         elevation: 10,

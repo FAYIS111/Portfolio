@@ -8,7 +8,7 @@ class SixthPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(5),
+      padding: const EdgeInsets.all(0.5),
       child: Card(
         shadowColor: Colors.grey,
         elevation: 10,
@@ -24,12 +24,14 @@ class SixthPage extends StatelessWidget {
                 widgetText: "Services",
                 fontValue: 30,
                 fontWeight: FontWeight.bold,
+                textColor: Colors.black,
               ),
             ),
             TextWidget(
               widgetText: "----***----",
               fontValue: 20,
               fontWeight: FontWeight.bold,
+              textColor: Colors.black,
             ),
             ServiceCard(
                 avatarImage: "assets/flutter.jpeg",

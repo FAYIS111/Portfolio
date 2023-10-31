@@ -71,6 +71,12 @@ flutter:
     - assets/git.jpeg
     - assets/gitHub.jpeg
     - assets/vsCode.jpeg
+    - assets/wallPaper1.jpeg
+    - assets/wallPaper2.jpeg
+    - assets/wallPaper3.jpeg
+    - assets/portfolio1.jpeg
+    - assets/portfolio2.jpeg
+    - assets/portfolio3.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

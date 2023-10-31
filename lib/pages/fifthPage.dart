@@ -1,7 +1,9 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/skillsText.dart';
 import 'package:portfolio/widgets/textWidget.dart';
 
+// ignore: must_be_immutable
 class FifthPage extends StatelessWidget {
   FifthPage({super.key});
 
@@ -16,42 +18,47 @@ class FifthPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(5),
+      padding: const EdgeInsets.all(0.5),
       child: Card(
         shadowColor: Colors.grey,
         elevation: 10,
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 20, right: 20, top: 20),
+              padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
               child: TextWidget(
                 widgetText: "Skills",
                 fontValue: 30,
                 fontWeight: FontWeight.bold,
+                textColor: Colors.black,
               ),
             ),
             TextWidget(
               widgetText: "----***----",
               fontValue: 20,
               fontWeight: FontWeight.bold,
+              textColor: Colors.black,
             ),
             TextWidget(
               widgetText: "Flutter developer",
               fontValue: 25,
               fontWeight: FontWeight.normal,
+              textColor: Colors.black,
             ),
             Padding(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 left: 5,
                 right: 5,
                 top: 15,
                 bottom: 15,
               ),
               child: TextWidget(
-                  widgetText:
-                      "Got a six month of work experiance in application developer. The privilege it will be a good developing & coding skill.....",
-                  fontValue: 18,
-                  fontWeight: FontWeight.normal),
+                widgetText:
+                    "Got a six month of work experiance in application developer. The privilege it will be a good developing & coding skill.....",
+                fontValue: 18,
+                fontWeight: FontWeight.normal,
+                textColor: Colors.black,
+              ),
             ),
             skillText(text: 'Flutter'),
             divider,
