@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/pages/eightPage.dart';
 import 'package:portfolio/pages/fifthPage.dart';
 import 'package:portfolio/pages/firstPage.dart';
 import 'package:portfolio/pages/fourthPage.dart';
@@ -34,6 +35,7 @@ class HomePage extends StatelessWidget {
               FifthPage(),
               const SixthPage(),
               SeventhPage(),
+              EightPage(),
             ],
           ),
         ),

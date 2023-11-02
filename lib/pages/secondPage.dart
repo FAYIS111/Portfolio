@@ -5,41 +5,36 @@ class SecondPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
-      color: Colors.white,
-      child: Card(
-        shadowColor: Colors.grey,
-        elevation: 10,
-        child: Column(
-          children: [
-            const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text(
-                "About Me",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 38,
-                  fontWeight: FontWeight.bold,
-                  fontStyle: FontStyle.italic,
-                ),
-              ),
-            ),
-            const Text(
-              "-----***-----",
+    return Card(
+      shadowColor: Colors.grey,
+      elevation: 10,
+      child: Column(
+        children: [
+          const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              "About Me",
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 27,
+                fontSize: 38,
                 fontWeight: FontWeight.bold,
+                fontStyle: FontStyle.italic,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset("assets/pic2.jpeg"),
-            )
-          ],
-        ),
+          ),
+          const Text(
+            "-----***-----",
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 27,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Image.asset("assets/pic2.jpeg"),
+          )
+        ],
       ),
     );
   }
