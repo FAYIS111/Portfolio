@@ -1,5 +1,6 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:portfolio/widgets/textWidget.dart';
 
 class FirstPage extends StatelessWidget {
@@ -39,7 +40,11 @@ class FirstPage extends StatelessWidget {
                   fontValue: 25,
                   fontWeight: FontWeight.bold,
                   textColor: Colors.white,
-                ),
+                )
+                    .animate(autoPlay: true)
+                    .flip(delay: const Duration(milliseconds: 2))
+                    .fade(delay: 300.ms)
+                    .slide(curve: Curves.easeInCirc),
               ),
               TextWidget(
                 widgetText: "I'm a Flutter Developer based",

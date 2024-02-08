@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 
 class PortfolioCard extends StatelessWidget {
   final String cardImage;
-  const PortfolioCard({
+  final void Function() buttonAction;
+
+  PortfolioCard({
     super.key,
     required this.cardImage,
+    required this.buttonAction,
   });
 
   @override
@@ -28,13 +31,12 @@ class PortfolioCard extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(
-                    Color.fromARGB(255, 194, 184, 184),
-                  ),
+                  backgroundColor:
+                      MaterialStateProperty.all(Colors.greenAccent),
                 ),
-                onPressed: () {},
-                child: Text(
-                  "Check on gitHub",
+                onPressed: buttonAction,
+                child: const Text(
+                  "See More",
                   style: TextStyle(
                     color: Colors.black,
                   ),

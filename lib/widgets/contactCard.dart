@@ -24,7 +24,7 @@ class ContactCard extends StatelessWidget {
             ),
             child: CircleAvatar(
               radius: 25,
-              backgroundColor: Color.fromARGB(255, 226, 220, 220),
+              backgroundColor: const Color.fromARGB(255, 226, 220, 220),
               child: Icon(
                 cardIcon,
                 size: 30,

@@ -15,7 +15,7 @@ class ServiceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(8),
+      padding: const EdgeInsets.all(8),
       width: MediaQuery.of(context).size.width,
       child: Card(
         shadowColor: Colors.grey,
@@ -28,7 +28,7 @@ class ServiceCard extends StatelessWidget {
                 bottom: 25,
               ),
               child: CircleAvatar(
-                radius: 30,
+                radius: 35,
                 backgroundImage: AssetImage(avatarImage),
               ),
             ),
